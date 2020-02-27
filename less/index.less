@@ -1,8 +1,24 @@
-// Follow the order in the readme
-@import "variables.less";
-@import "mixins.less";
+
 @import "reset.less";
-@import "global.less";
-@import "navigation.less";
-@import "footer.less";
-@import "home-page.less";
+
+//mixin here
+
+
+
+.display-flex(@flex-direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: @flex-direction;
+}
+
+//css here
+.display-flex-column {
+    .display-flex(column);
+    
+}
+
+.text-margin {
+
+}
+
