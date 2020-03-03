@@ -247,3 +247,15 @@ body .footer {
     margin: 5%;
   }
 }
+@media only screen and (min-width: 800px) {
+  .display-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 35%;
+  }
+}
