@@ -1,8 +1,8 @@
 
 @import "reset.less";
-@body-background-color: #F5F5F5;
+@body-background-color: rgba(224, 215, 215, 0.74);
 @margin: 5%;
-@border-radius: 5px;
+@border-radius: 0.6rem;
 .color(@color){
     background-color: @color;
 };
@@ -12,62 +12,92 @@
     align-items: center;
     justify-content: center;
     flex-direction: @flex-direction;
-    
+ 
 }
+@h1-font-size: 8rem;
+@body-font-size: 2rem;
 
 //css here
-body {
 
-    .display-flex-column {
+
+
+.display-flex-column {
         .display-flex(column);
-        
+        align-items: center;
     }
+// tablet view
+@media only screen (min-width: 600px) {
+    .body-background{
+        background-color: @body-background-color;
+    }
+}
 
+//mobile first
+h1 {
+    margin: @margin;
+    font-size: @h1-font-size;
+}
+body {
+    color: #646464 ;
+    font-size: @body-font-size;
+    text-align: center;
+    line-height: 5rem;
     .background-img{
         width: 100%;
-        height: 35vw;
-        background: url("../images/banner.jpg") ;
+        height: 60vh;
+        background: url("../images/new-pic1.jpg") ;
         background-size: cover;
     }
 
     .banner-text{
         color: white;
         text-align: center;
-
+        
     }
 
-    .text-margin {
-        margin: 0 @margin;
+   
+    nav {
+        
+    
+         .button{
+            border-radius: @border-radius;
+            font-size: 3rem;
+            border: 2px solid white;
+            width: 80vw;
+            height: 4rem;
+            padding: 0.8rem 0;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            margin: @margin*3 auto 0;
+            
+        }
+        .button:hover{
+            background-color: white;
+            color: black;
+        }
     }
-
-    .button{
-        border-radius: @border-radius;
-        background-color: white;
-        width: 300px;
-        padding: 8px 0;
-        color: black;
-        text-align: center;
-        vertical-align: middle;
-        margin: 2%;
-    }
-    .body-background{
-        background-color: @body-background-color;
-    }
+    
 
     section {
-    
+        
+        p{
+            margin: @margin;
+            font-size: 4rem;
+        }
         .img-formating{
             width: 100%;
-            height: 35vw;
+            height: auto;
         }
 
+        
         .circle{
             border-radius: 100%;
-            cursor: default;
+           
             display: inline-block;
             height: 5.5em;
             line-height: 5.5em;
-            margin: 0 0 2em 0;
+            margin: 2em;
             width: 5.5em;
         }
         .coral {
@@ -88,16 +118,18 @@ body {
 
         
 
-        .border-line-bottom {
-            padding: 5% 0;
+        .intro {
+            
+            display: flex;
+            align-items: center;
+            margin: @margin @margin*2;
             border-bottom: 2px solid darken(@body-background-color, 10%) ;
+            height: 35vh;
+            font-size: 4rem;
+            line-height: 8rem;
         }
-
-        .section-border{
-            border-radius: @border-radius;
-            background-color: white;
-            margin: 3% 0;
-        }
+        
+    
 
         .img-bottom-radius{
             border-radius: 0 0 @border-radius @border-radius;
@@ -107,4 +139,17 @@ body {
             border-radius:  @border-radius @border-radius 0 0;
         }
     }
+
+    // tablet view
+    @media only screen (min-width: 600px) {
+        .section-border{
+            border-radius: @border-radius;
+            background-color: white;
+            
+        }
+        .text-margin {
+            margin: 2% @margin;
+    
+        }
+      }
 }
