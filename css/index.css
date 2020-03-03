@@ -135,20 +135,14 @@ a {
   flex-direction: column;
   align-items: center;
 }
-@media only screen (min-width: 600px) {
-  .body-background {
-    background-color: rgba(224, 215, 215, 0.74);
-  }
-}
 h1 {
-  margin: 5%;
-  font-size: 8rem;
+  margin: 5% 0 0 0;
+  font-size: 4rem;
 }
 body {
   color: #646464;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
-  line-height: 5rem;
 }
 body .background-img {
   width: 100%;
@@ -162,15 +156,15 @@ body .banner-text {
 }
 body nav .button {
   border-radius: 0.6rem;
-  font-size: 3rem;
+  font-size: 2rem;
   border: 2px solid white;
   width: 80vw;
-  height: 4rem;
+  height: 10%;
   padding: 0.8rem 0;
   color: white;
   text-align: center;
   vertical-align: middle;
-  margin: 15% auto 0;
+  margin: 10% auto 0;
 }
 body nav .button:hover {
   background-color: white;
@@ -178,7 +172,8 @@ body nav .button:hover {
 }
 body section p {
   margin: 5%;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
 }
 body section .img-formating {
   width: 100%;
@@ -210,21 +205,45 @@ body section .intro {
   margin: 5% 10%;
   border-bottom: 2px solid rgba(202, 186, 186, 0.74);
   height: 35vh;
-  font-size: 4rem;
-  line-height: 8rem;
+  font-size: 2.5rem;
+  line-height: 100%;
 }
-body section .img-bottom-radius {
-  border-radius: 0 0 0.6rem 0.6rem;
+body .footer {
+  display: none;
 }
-body section .img-top-radius {
-  border-radius: 0.6rem 0.6rem 0 0;
-}
-@media only screen (min-width: 600px) {
-  body .section-border {
+@media only screen and (min-width: 600px) {
+  .section-border {
     border-radius: 0.6rem;
     background-color: white;
   }
-  body .text-margin {
+  .body-background {
+    background-color: rgba(224, 215, 215, 0.74);
+  }
+  .text-margin {
     margin: 2% 5%;
+  }
+  body .img-bottom-radius {
+    border-radius: 0 0 0.6rem 0.6rem;
+  }
+  body .img-top-radius {
+    border-radius: 0.6rem 0.6rem 0 0;
+  }
+  body .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .display-wide-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  body nav .button {
+    font-size: 1.6rem;
+    width: 25vw;
+    padding: 0.6rem 0;
+    height: 1.2rem;
+    margin: 5%;
   }
 }
