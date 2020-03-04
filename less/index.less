@@ -16,8 +16,8 @@
 }
 @h1-font-size: 4rem;
 @body-font-size: 1.8rem;
-
-
+@desktop-content-width: 70vw;
+@tablet-content-width: 90vw;
 
 //css here
 
@@ -89,7 +89,10 @@ body {
             width: 100%;
             height: auto;
         }
-
+        .img-formating-small{
+            width: 100%;
+            height: auto;
+        }
         
         .circle{
             border-radius: 100%;
@@ -174,6 +177,10 @@ body {
         .display-wide-screen{
             .display-flex(row);
         }
+
+        .display-body-widescreen{
+            width: @tablet-content-width;
+        }
         nav {
                         
             .button{
@@ -188,14 +195,24 @@ body {
 
 }
 @media only screen and (min-width: 800px) {
-    .display-desktop{
-        .display-flex(row);
-        flex-wrap: wrap;
-    }
+    
     .container{
-       
+        margin: 0 auto;
+        padding: 2%;
         width: 35%;
+        box-sizing: border-box;
     }
-    
-    
+   
+    body{  
+        .background-img{
+        background: url("../images/new-pic5.jpg") ;
+        }
+        .display-body-widescreen{
+            .display-flex(row);
+            flex-wrap: wrap;
+            width: @desktop-content-width;
+            align-items: flex-start;
+        }
+    }
 }
+    

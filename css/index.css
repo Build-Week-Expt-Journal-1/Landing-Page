@@ -179,6 +179,10 @@ body section .img-formating {
   width: 100%;
   height: auto;
 }
+body section .img-formating-small {
+  width: 100%;
+  height: auto;
+}
 body section .circle {
   border-radius: 100%;
   display: inline-block;
@@ -239,6 +243,9 @@ body .footer {
     justify-content: center;
     flex-direction: row;
   }
+  body .display-body-widescreen {
+    width: 90vw;
+  }
   body nav .button {
     font-size: 1.6rem;
     width: 25vw;
@@ -248,14 +255,22 @@ body .footer {
   }
 }
 @media only screen and (min-width: 800px) {
-  .display-desktop {
+  .container {
+    margin: 0 auto;
+    padding: 2%;
+    width: 35%;
+    box-sizing: border-box;
+  }
+  body .background-img {
+    background: url("../images/new-pic5.jpg");
+  }
+  body .display-body-widescreen {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .container {
-    width: 35%;
+    width: 70vw;
+    align-items: flex-start;
   }
 }
