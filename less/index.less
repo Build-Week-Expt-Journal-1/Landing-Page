@@ -89,11 +89,7 @@ body {
             width: 100%;
             height: auto;
         }
-        .img-formating-small{
-            width: 100%;
-            height: auto;
-        }
-        
+              
         .circle{
             border-radius: 100%;
             display: inline-block;
@@ -169,11 +165,7 @@ body {
             border-radius:  @border-radius @border-radius 0 0;
         }
 
-        .footer{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+        
         .display-wide-screen{
             .display-flex(row);
         }
@@ -199,20 +191,27 @@ body {
     .container{
         margin: 0 auto;
         padding: 2%;
-        width: 35%;
+        width: 50%;
         box-sizing: border-box;
     }
    
     body{  
+
         .background-img{
         background: url("../images/new-pic5.jpg") ;
         }
+
         .display-body-widescreen{
             .display-flex(row);
             flex-wrap: wrap;
             width: @desktop-content-width;
             align-items: flex-start;
         }
+
+        .img-top-radius{
+            border-radius: 0;
+        }
+
     }
 }
     
