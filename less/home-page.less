@@ -15,10 +15,10 @@ font-size: @body-font-size;
 text-align: center;
 
 .background-img{
-  width: 100%;
+  width: 100vw;
   height: 60vh;
   background: url("../images/new-pic1.jpg") ;
-  background-size: cover;
+  background-size: 100vw 100vh;
 }
 
 .banner-text{
@@ -32,15 +32,15 @@ nav {
      
    .button{
       border-radius: @border-radius;
-      font-size: 2rem;
+      font-size: @body-font-size*2;
       border: 2px solid white;
       width: 80vw;
-      height: auto;
-      padding: 0.8rem 0;
+      height: 6vh;
+      padding: 0.8vh 0;
       color: white;
       text-align: center;
       vertical-align: middle;
-      margin: @margin*2 auto 0;
+      margin: 0 auto 2vh;
       
   }
   .button:hover{
@@ -54,7 +54,7 @@ section {
   
   p{
       margin: @margin;
-      font-size: 2.5rem;
+      font-size: @body-font-size*1.5;
       line-height: 3rem;
   }
   .img-formating{
@@ -95,7 +95,7 @@ section {
       margin: @margin @margin*2;
       border-bottom: 2px solid darken(@body-background-color, 10%) ;
       height: 35vh;
-      font-size: 2.5rem;
+      font-size: @body-font-size*1.5;
       line-height: 100%;
   }
   
@@ -104,7 +104,7 @@ section {
 }
 
 // tablet view
-@media only screen and (min-width: 500px) {
+@media @tablet-size {
 .section-border{
   border-radius: @border-radius;
   background-color: white;
@@ -117,8 +117,19 @@ section {
   margin: 2% @margin;
   
 }
+h1{
+  margin: @margin-wide-screen;
+}
 
 body{
+  section {
+    p{
+      margin: @margin-wide-screen;
+    }
+    .intro{
+      margin: @margin-wide-screen;
+    }
+  }
   .box-shadow{
     box-shadow: 2px 3px darken(@body-background-color, 10%);
   }
@@ -140,19 +151,16 @@ body{
       width: @tablet-content-width;
   }
   nav {
-                  
       .button{
-          font-size: 1.6rem;
-          width: 25vw;
-          padding: 0.6rem 0;
-          height: auto;
-          margin: @margin;
-     }
+        width: 25vw;
+        padding: 0.6rem 0;
+        margin: @margin-wide-screen;
+      }
 }
 }
 
 }
-@media only screen and (min-width: 1000px) {
+@media @desktop-size {
 
 .container{
   margin: 0 auto;
@@ -162,9 +170,15 @@ body{
 }
 
 body{  
+  .banner-text{
+    color: black;
+    font-weight: 900;
+  }
 
+  
   .background-img{
   background: url("../images/new-pic5.jpg") ;
+  background-size: 100vw 100vh;
   }
 
   .display-body-widescreen{

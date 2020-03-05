@@ -147,11 +147,11 @@ h5 {
   font-family: 'Indie Flower', cursive;
 }
 h1 {
-  margin: 5% 0 0 0;
-  font-size: 4rem;
+  margin: 5vw;
+  font-size: 5vh;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3vh;
   padding-bottom: 10px;
 }
 h4 {
@@ -160,7 +160,6 @@ h4 {
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
   padding-bottom: 10px;
 }
 img {
@@ -175,14 +174,14 @@ img {
 }
 body {
   color: #646464;
-  font-size: 1.8rem;
+  font-size: 2vh;
   text-align: center;
 }
 body .background-img {
-  width: 100%;
+  width: 100vw;
   height: 60vh;
   background: url("../images/new-pic1.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
 }
 body .banner-text {
   color: white;
@@ -190,23 +189,23 @@ body .banner-text {
 }
 body nav .button {
   border-radius: 0.6rem;
-  font-size: 2rem;
+  font-size: 4vh;
   border: 2px solid white;
   width: 80vw;
-  height: auto;
-  padding: 0.8rem 0;
+  height: 6vh;
+  padding: 0.8vh 0;
   color: white;
   text-align: center;
   vertical-align: middle;
-  margin: 10% auto 0;
+  margin: 0 auto 2vh;
 }
 body nav .button:hover {
   background-color: white;
   color: black;
 }
 body section p {
-  margin: 5%;
-  font-size: 2.5rem;
+  margin: 5vw;
+  font-size: 3vh;
   line-height: 3rem;
 }
 body section .img-formating {
@@ -236,10 +235,10 @@ body section .pink {
 body section .intro {
   display: flex;
   align-items: center;
-  margin: 5% 10%;
+  margin: 5vw 10vw;
   border-bottom: 2px solid rgba(202, 186, 186, 0.74);
   height: 35vh;
-  font-size: 2.5rem;
+  font-size: 3vh;
   line-height: 100%;
 }
 @media only screen and (min-width: 500px) {
@@ -251,7 +250,16 @@ body section .intro {
     background-color: rgba(224, 215, 215, 0.74);
   }
   .text-margin {
-    margin: 2% 5%;
+    margin: 2% 5vw;
+  }
+  h1 {
+    margin: 1vh;
+  }
+  body section p {
+    margin: 1vh;
+  }
+  body section .intro {
+    margin: 1vh;
   }
   body .box-shadow {
     box-shadow: 2px 3px rgba(202, 186, 186, 0.74);
@@ -272,11 +280,9 @@ body section .intro {
     width: 90vw;
   }
   body nav .button {
-    font-size: 1.6rem;
     width: 25vw;
     padding: 0.6rem 0;
-    height: auto;
-    margin: 5%;
+    margin: 1vh;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -286,8 +292,13 @@ body section .intro {
     width: 50%;
     box-sizing: border-box;
   }
+  body .banner-text {
+    color: black;
+    font-weight: 900;
+  }
   body .background-img {
     background: url("../images/new-pic5.jpg");
+    background-size: 100vw 100vh;
   }
   body .display-body-widescreen {
     display: flex;
