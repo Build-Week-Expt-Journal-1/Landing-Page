@@ -129,6 +129,48 @@ table {
 a {
   text-decoration: none;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .display-flex-column {
   display: flex;
   justify-content: center;
@@ -159,7 +201,7 @@ body nav .button {
   font-size: 2rem;
   border: 2px solid white;
   width: 80vw;
-  height: 10%;
+  height: auto;
   padding: 0.8rem 0;
   color: white;
   text-align: center;
@@ -208,9 +250,6 @@ body section .intro {
   font-size: 2.5rem;
   line-height: 100%;
 }
-body .footer {
-  display: none;
-}
 @media only screen and (min-width: 500px) {
   .section-border {
     border-radius: 0.6rem;
@@ -221,6 +260,9 @@ body .footer {
   }
   .text-margin {
     margin: 2% 5%;
+  }
+  body .box-shadow {
+    box-shadow: 2px 3px rgba(202, 186, 186, 0.74);
   }
   body .img-bottom-radius {
     border-radius: 0 0 0.6rem 0.6rem;
@@ -241,7 +283,7 @@ body .footer {
     font-size: 1.6rem;
     width: 25vw;
     padding: 0.6rem 0;
-    height: 1.2rem;
+    height: auto;
     margin: 5%;
   }
 }
