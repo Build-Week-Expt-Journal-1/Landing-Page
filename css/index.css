@@ -211,7 +211,7 @@ body section .intro {
 body .footer {
   display: none;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .section-border {
     border-radius: 0.6rem;
     background-color: white;
@@ -245,7 +245,7 @@ body .footer {
     margin: 5%;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .container {
     margin: 0 auto;
     padding: 2%;
