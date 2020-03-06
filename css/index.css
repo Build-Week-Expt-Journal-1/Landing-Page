@@ -154,10 +154,6 @@ h2 {
   font-size: 3vh;
   padding-bottom: 10px;
 }
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-}
 p {
   line-height: 1.5;
   padding-bottom: 10px;
@@ -171,6 +167,17 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer nav a {
+  margin: 20px 20%;
+  color: #646464;
 }
 body {
   color: #646464;
@@ -192,6 +199,7 @@ body nav .button {
   font-size: 4vh;
   border: 2px solid white;
   width: 80vw;
+  min-width: 20vh;
   height: 6vh;
   padding: 0.8vh 0;
   color: white;
@@ -240,6 +248,15 @@ body section .intro {
   height: 35vh;
   font-size: 3vh;
   line-height: 100%;
+}
+body .member-img {
+  margin: 5vw;
+  border-radius: 30rem;
+  height: 100px;
+  width: auto;
+}
+body .text {
+  font-size: 2vh;
 }
 @media only screen and (min-width: 500px) {
   .section-border {
@@ -291,10 +308,6 @@ body section .intro {
     padding: 2%;
     width: 50%;
     box-sizing: border-box;
-  }
-  body .banner-text {
-    color: black;
-    font-weight: 900;
   }
   body .background-img {
     background: url("../images/new-pic5.jpg");

@@ -8,9 +8,18 @@
 
 
 //mobile first
+footer nav {
+  .display-flex(row);
+  justify-content: space-evenly;
+  a{
+    margin: 20px 20%;
+    color: @text-general-color;
+  }
+}
+
 
 body {
-color: #646464 ;
+color: @text-general-color ;
 font-size: @body-font-size;
 text-align: center;
 
@@ -35,6 +44,7 @@ nav {
       font-size: @body-font-size*2;
       border: 2px solid white;
       width: 80vw;
+      min-width: 20vh;
       height: 6vh;
       padding: 0.8vh 0;
       color: white;
@@ -100,7 +110,17 @@ section {
   }
   
 }
+  .member-img{
+    margin: @margin;
+    border-radius: @border-radius*50;
+    height: 100px;
+    width: auto;
+  }
   
+  .text{
+    font-size: @body-font-size;
+
+  }
 }
 
 // tablet view
@@ -170,10 +190,7 @@ body{
 }
 
 body{  
-  .banner-text{
-    color: black;
-    font-weight: 900;
-  }
+ 
 
   
   .background-img{
